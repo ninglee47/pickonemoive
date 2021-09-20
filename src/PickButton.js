@@ -8,7 +8,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 
 //const apiKey = '361c5360d12fe6b74f04ebd76dfd7c4b' timdb key
 //const apiKey = 'nPkwzsC8PrwHhxzzZvhOFt6OU4rGNVuTFq1UQ7nS' dr
-const apiKey = 'hZwUqU4GPUbgMFlwhFn1ZNfFZE18RExQzlS1okuu '
+const apiKey = 'hZwUqU4GPUbgMFlwhFn1ZNfFZE18RExQzlS1okuu'
 
 //generate random number
 function getRandom(min,max){

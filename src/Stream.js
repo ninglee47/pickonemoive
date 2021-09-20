@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 //const apiKey = 'nPkwzsC8PrwHhxzzZvhOFt6OU4rGNVuTFq1UQ7nS' dr
-const apiKey = 'hZwUqU4GPUbgMFlwhFn1ZNfFZE18RExQzlS1okuu '
+const apiKey = 'hZwUqU4GPUbgMFlwhFn1ZNfFZE18RExQzlS1okuu'
 
 async function getStreamData (movie_id) {
     let streams = await fetch(`https://secure-hamlet-28039.herokuapp.com/https://api.watchmode.com/v1/title/${movie_id}/sources/?apiKey=${apiKey}&regions=GB`)
