@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const apiKey = 'hZwUqU4GPUbgMFlwhFn1ZNfFZE18RExQzlS1okuu '
 
 async function getStreamData (movie_id) {
-    let streams = await fetch(`https://api.watchmode.com/v1/title/${movie_id}/sources/?apiKey=${apiKey}&regions=GB`)
+    let streams = await fetch(`https://secure-hamlet-28039.herokuapp.com/https://api.watchmode.com/v1/title/${movie_id}/sources/?apiKey=${apiKey}&regions=GB`)
     .then(res => res.json())
 
     console.log(streams)

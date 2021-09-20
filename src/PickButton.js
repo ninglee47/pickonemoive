@@ -19,7 +19,7 @@ async function getAllMovie() {
     var page = getRandom(0, 104);
     let movieList = [];
 
-    let listUrl = `https://api.watchmode.com/v1/list-titles/?apiKey=${apiKey}&regions=GB&page=${page}`
+    let listUrl = `https://secure-hamlet-28039.herokuapp.com/https://api.watchmode.com/v1/list-titles/?apiKey=${apiKey}&regions=GB&page=${page}`
     var res = await fetch(listUrl);
     var dat = await res.json();
     console.log(dat)
@@ -29,14 +29,7 @@ async function getAllMovie() {
 }
 
 async function getSource() {
-    let url = `https://api.watchmode.com/v1/sources/?apiKey=${apiKey}&regions=GB`
-    var res = await fetch(url)
-    var dat = await res.json()
-    return dat;
-}
-
-async function getGenre() {
-    let url = `https://api.watchmode.com/v1/genres/?apiKey=${apiKey}`
+    let url = `https://secure-hamlet-28039.herokuapp.com/https://api.watchmode.com/v1/sources/?apiKey=${apiKey}&regions=GB`
     var res = await fetch(url)
     var dat = await res.json()
     return dat;

@@ -13,7 +13,7 @@ class Imdb extends React.Component {
         //console.log(this.props.value.imdb_id)
         var id = this.props.value.imdb_id
         if (id !== prevProps.value.imdb_id) {
-            fetch(`http://www.omdbapi.com/?i=${id}&apikey=${omdb_key}`)
+            fetch(`https://secure-hamlet-28039.herokuapp.com/http://www.omdbapi.com/?i=${id}&apikey=${omdb_key}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
