@@ -8,7 +8,7 @@ async function getStreamData (movie_id) {
     let streams = await fetch(`https://secure-hamlet-28039.herokuapp.com/https://api.watchmode.com/v1/title/${movie_id}/sources/?apiKey=${apiKey}&regions=GB`)
     .then(res => res.json())
 
-    console.log(streams)
+    //console.log(streams)
 
     return streams
 }
@@ -51,7 +51,7 @@ class Stream extends React.Component {
                 
                 const results = arrayOne.filter(({ id: id1 }) => arrayTwo.some(({ source_id: id2 }) => id2 === id1));
 
-                console.log(results)
+                //console.log(results)
                 //Add stream service name
                 for (let index = 0; index < arrayTwo.length; index++) {
                     const element = arrayTwo[index];

@@ -22,7 +22,7 @@ async function getAllMovie() {
     let listUrl = `https://secure-hamlet-28039.herokuapp.com/https://api.watchmode.com/v1/list-titles/?apiKey=${apiKey}&regions=GB&page=${page}`
     var res = await fetch(listUrl);
     var dat = await res.json();
-    console.log(dat)
+    //console.log(dat)
     movieList.push(dat)
     
     return movieList;
@@ -62,7 +62,7 @@ class Pick extends React.Component {
         //console.log(this.state.dataList[0].titles)
         var elm = getRandom(0, this.state.dataList[0].titles.length)
         var movie = this.state.dataList[0].titles[elm]
-        console.log(movie)
+        //console.log(movie)
         this.setState({
             movie: movie
         })

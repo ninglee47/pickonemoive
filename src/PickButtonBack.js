@@ -33,7 +33,7 @@ class Pick extends React.Component {
     handlePick() {
 
         getRamdonId().then(value => {
-            console.log(value)
+            //console.log(value)
             this.setState({
                 movie: value
             });
@@ -43,7 +43,7 @@ class Pick extends React.Component {
             fetch(searchURl)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                //console.log(data)
                 this.setState({
                     data: data
                 })

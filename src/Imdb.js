@@ -16,7 +16,7 @@ class Imdb extends React.Component {
             fetch(`https://secure-hamlet-28039.herokuapp.com/http://www.omdbapi.com/?i=${id}&apikey=${omdb_key}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                //console.log(data)
                 this.setState({
                     imdbData: data
                 })

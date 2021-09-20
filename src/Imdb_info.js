@@ -13,7 +13,7 @@ class Imdb_info extends React.Component {
                 <p>Genre: {this.props.value.Genre}</p>
                 <p>Imdb Score: {this.props.value.imdbRating}</p>
                 <p>Votes: {this.props.value.imdbVotes}</p>
-                <a href={pageLink + this.props.value.imdb_id} target="_blank">IMDB Page</a>
+                <a href={pageLink + this.props.value.imdbID} target="_blank">IMDB Page</a>
             </div>
         )
 
