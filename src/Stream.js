@@ -19,7 +19,7 @@ function GenreList(props) {
         genres = props.data.map((d, index)=> 
             //console.log(genre.name)
             <li key={index}>
-                <a href={d.web_url} target='_blank'>{d.name}</a>
+                <a href={d.web_url} target='_blank' rel="noreferrer" >{d.name}</a>
             </li>
         )   
     
@@ -57,7 +57,7 @@ class Stream extends React.Component {
                     const element = arrayTwo[index];
                     for (let index = 0; index < results.length; index++) {
                         const id = results[index].id;
-                        if (element.source_id == id) {
+                        if (element.source_id === id) {
                             element.name = results[index].name
                         }    
                     }   

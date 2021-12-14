@@ -1,7 +1,7 @@
 import React from 'react';
 import Imdb from './Imdb'
 import Stream from './Stream'
-import Imdb_info from './Imdb_info'
+import ImdbInfo from './ImdbInfo'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import { Button, Col, Container, Row } from 'react-bootstrap';
@@ -94,7 +94,7 @@ class Pick extends React.Component {
                                 <Imdb value={this.state.movie}  onIMDBchange={this.handleIMDBchange}/>
                             </Col>
                             <Col className='info'>
-                                <Imdb_info value={this.state.imdb_data} className='detail'/>
+                                <ImdbInfo value={this.state.imdb_data} className='detail'/>
                                 <Stream value={this.state.movie} data={this.state.source}/>
                             </Col>
                         </Row>
@@ -102,7 +102,7 @@ class Pick extends React.Component {
                 </div>
 
                 <div className='align-items-center'>
-                    <Button className="btn btn-lg btn-secondary" onClick={this.handlePick}>Pick!</Button>
+                    <Button className="btn btn-lg btn-secondary" onClick={this.handlePick}>Get me another one</Button>
                 </div>                
                 
                 
@@ -110,7 +110,7 @@ class Pick extends React.Component {
                     <div className="inner">
                         <p>Supported regeions: GB</p>
                       <p>
-                      <a href="https://www.watchmode.com/" target="_blank"> Streaming data powered by Watchmode.com </a>
+                      <a href="https://www.watchmode.com/" target="_blank" rel="noreferrer" > Streaming data powered by Watchmode.com </a>
                       </p>
                     </div>
                 </footer>

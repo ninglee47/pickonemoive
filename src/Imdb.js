@@ -33,7 +33,7 @@ class Imdb extends React.Component {
         return (
             <div>
                 <h2> {this.props.value.title} ({this.props.value.year})</h2>
-                <img src={this.state.imdbData.Poster}></img>
+                <img src={this.state.imdbData.Poster} alt="Poster"></img>
             </div>
         )
 
