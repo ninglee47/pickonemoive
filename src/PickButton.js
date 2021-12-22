@@ -5,6 +5,7 @@ import ImdbInfo from './ImdbInfo'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { RotateSpinLoader } from 'react-css-loaders';
 
 //const apiKey = '361c5360d12fe6b74f04ebd76dfd7c4b' timdb key
 //const apiKey = 'nPkwzsC8PrwHhxzzZvhOFt6OU4rGNVuTFq1UQ7nS' dr
