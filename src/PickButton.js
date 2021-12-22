@@ -5,7 +5,8 @@ import ImdbInfo from './ImdbInfo'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { RotateSpinLoader } from 'react-css-loaders';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+import Loader from "react-loader-spinner";
 
 //const apiKey = '361c5360d12fe6b74f04ebd76dfd7c4b' timdb key
 //const apiKey = 'nPkwzsC8PrwHhxzzZvhOFt6OU4rGNVuTFq1UQ7nS' dr
@@ -85,6 +86,15 @@ class Pick extends React.Component {
     }
 
     render () {
+        if (this.state.imdb_data.length === 0) {
+            return <Loader
+            type="Puff"
+            color="#00BFFF"
+            height={100}
+            width={100}
+            timeout={3000} //3 secs
+          />
+        }
         return (
             <div >
                 <div className='d-flex p-3 mx-auto flex-column'>
