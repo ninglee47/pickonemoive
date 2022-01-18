@@ -80,7 +80,7 @@ class Stream extends React.Component {
     render () {
         return (
             <div className='detail'>
-                Avaialbe on:
+                <span className='font-weight-bold'>Avaialbe on:</span> 
                 <GenreList  data={this.state.stream}/>
             </div>
         )

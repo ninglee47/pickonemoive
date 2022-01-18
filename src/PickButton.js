@@ -5,8 +5,7 @@ import ImdbInfo from './ImdbInfo'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
-import Loader from "react-loader-spinner";
+
 
 //const apiKey = '361c5360d12fe6b74f04ebd76dfd7c4b' timdb key
 //const apiKey = 'nPkwzsC8PrwHhxzzZvhOFt6OU4rGNVuTFq1UQ7nS' dr
@@ -86,19 +85,11 @@ class Pick extends React.Component {
     }
 
     render () {
-        if (this.state.imdb_data.length === 0) {
-            return <Loader
-            type="Puff"
-            color="#00BFFF"
-            height={100}
-            width={100}
-            timeout={3000} //3 secs
-          />
-        }
+        
         return (
             <div >
                 <div className='d-flex p-3 mx-auto flex-column'>
-                    <h1 className='cover-heading text-center'>Pick a movie for you</h1>
+                    <h1 className='cover-heading text-center font-weight-bold'>Pick a movie for you</h1>
                     <Container>
                         <Row>
                             <Col className='cover'>
@@ -113,13 +104,13 @@ class Pick extends React.Component {
                 </div>
 
                 <div className='align-items-center'>
-                    <Button className="btn btn-lg btn-secondary" onClick={this.handlePick}>Get me another one</Button>
+                    <Button className="btn btn-lg btn-secondary font-weight-bold" onClick={this.handlePick}>Get me another one</Button>
                 </div>                
                 
                 
                 <footer className="mastfoot mt-auto text-center">
                     <div className="inner">
-                        <p>Supported regeions: GB</p>
+                        <p>Supported regeion: GB</p>
                       <p>
                       <a href="https://www.watchmode.com/" target="_blank" rel="noreferrer" > Streaming data powered by Watchmode.com </a>
                       </p>
